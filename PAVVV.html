@@ -35,6 +35,58 @@
             font-size: 0.9em;
             color: #7F8C8D;
         }
+
+        .canvas-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px auto;
+      max-width: 1200px;
+      gap: 10px;
+    }
+
+    /* Estilo de las filas */
+    .canvas-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    /* Estilo de los cuadros */
+    .canvas-box {
+      border: 2px solid #4a90e2;
+      border-radius: 10px;
+      background-color: #ffffff;
+      padding: 15px;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Colores personalizados por cada sección */
+    .propuesta { background-color: #d1e7dd; }
+    .actividades { background-color: #f8d7da; }
+    .socios { background-color: #cff4fc; }
+    .relacion { background-color: #fce4ec; }
+    .segmentos { background-color: #fff3cd; }
+    .costos { background-color: #f5c6cb; }
+    .recursos { background-color: #bee5eb; }
+    .canales { background-color: #e2e3e5; }
+    .ingresos { background-color: #d4edda; }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+      .canvas-row {
+        flex-direction: column;
+      }
+      .canvas-box {
+        width: 90%;
+      }
+    }
     </style>
 </head>
 <body>
@@ -114,9 +166,89 @@
         <h2>Potencial Comercial y Mercado</h2>
         <p>El software tiene un amplio potencial de comercialización en instituciones educativas y plataformas de e-learning, contribuyendo a la inclusión en la educación STEM a nivel global.</p>
 
-        <div class="footer">
-            <p>Artículo orientado a la solicitud de patente.</p>
-        </div>
     </div>
+            
+    
+    <div class="canvas-container">
+        <h2>Model Canvas</h2>
+        <!-- Fila Superior -->
+        <div class="canvas-row">
+          <div class="canvas-box propuesta">
+            <strong>1. Propuesta de Valor</strong><br>
+            • Acceso a educación superior en ingeniería para personas ciegas.<br>
+            • Comprensión profunda de conceptos matemáticos complejos.<br>
+            • Experiencia de aprendizaje personalizada y accesible.
+          </div>
+          <div class="canvas-box actividades">
+            <strong>7. Actividades Clave</strong><br>
+            • Desarrollo y mantenimiento del software.<br>
+            • Investigación en interfaces accesibles.<br>
+            • Comercialización y ventas.<br>
+            • Soporte técnico al cliente.
+          </div>
+          <div class="canvas-box socios">
+            <strong>8. Socios Clave</strong><br>
+            • Universidades y centros de investigación.<br>
+            • Desarrolladores de hardware (fabricantes de dispositivos hápticos).<br>
+            • Empresas de software educativo.<br>
+            • Asociaciones de personas ciegas.
+          </div>
+        </div>
+    
+        <!-- Fila Media -->
+        <div class="canvas-row">
+          <div class="canvas-box segmentos">
+            <strong>2. Segmentos de Clientes</strong><br>
+            • Estudiantes universitarios con discapacidad visual en carreras STEM.<br>
+            • Investigadores con discapacidad visual en áreas de ingeniería y matemáticas.<br>
+            • Instituciones educativas que buscan promover la inclusión.
+          </div>
+          <div class="canvas-box relacion">
+            <strong>4. Relación con Clientes</strong><br>
+            • Soporte técnico personalizado.<br>
+            • Comunidades en línea para usuarios.<br>
+            • Actualizaciones regulares del software.<br>
+            • Programas de capacitación para docentes.
+          </div>
+          <div class="canvas-box canales">
+            <strong>3. Canales</strong><br>
+            • Plataformas de e-learning (Moodle, Canvas, etc.).<br>
+            • Asociaciones de ciegos y discapacitados visuales.<br>
+            • Universidades y centros de investigación.<br>
+            • Ferias y congresos de tecnología educativa.
+          </div>
+        </div>
+    
+        <!-- Fila Inferior -->
+        <div class="canvas-row">
+          <div class="canvas-box costos">
+            <strong>9. Estructura de Costos</strong><br>
+            • Desarrollo del software.<br>
+            • Mantenimiento y actualizaciones.<br>
+            • Marketing y ventas.<br>
+            • Licencias y suscripciones.<br>
+            • Soporte técnico.
+          </div>
+          <div class="canvas-box recursos">
+            <strong>6. Recursos Claves</strong><br>
+            • Equipo de desarrollo de software (programadores, diseñadores de interfaces).<br>
+            • Expertos en accesibilidad y discapacidad visual.<br>
+            • Licencias de software (si aplica).<br>
+            • Base de datos de ecuaciones matemáticas.
+          </div>
+          <div class="canvas-box ingresos">
+            <strong>5. Fuentes de Ingresos</strong><br>
+            • Venta de licencias a instituciones educativas.<br>
+            • Suscripciones individuales.<br>
+            • Financiamiento de investigación.<br>
+            • Donaciones.
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Artículo orientado a la solicitud de patente.</p>
+    </div>
+
+
 </body>
 </html>
